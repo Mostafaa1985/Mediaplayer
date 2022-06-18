@@ -145,18 +145,12 @@ i {
           justify-content: space-between;
 }
 
-.player .player-ui .small p, .player .player-ui .small i {
+.player .player-ui .small p {
   margin: 0;
   color: white;
   font-size: 14px;
-}
-
-.player .player-ui .small p {
   color: #ddd;
-}
-
-.player .player-ui .small i {
-  font-size: 16px;
+  margin :auto;
 }
 
 .player .player-ui .progress {
