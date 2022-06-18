@@ -16,13 +16,15 @@
 <body>
     <div class="player">
         <audio></audio>
-        <div class="cover"></div>      
+        <div class="cover"></div>
+        <nav>
+        </nav>
         <div class="player-ui">
             <div class="title">
                 <h3 data-title></h3>
             </div>
-            <div class="small">                
-                <p data-singer></p>                
+            <div class="small">
+                <p data-singer></p>
             </div>
             <div class="progress">
                 <div class="played">
@@ -35,7 +37,8 @@
                 <i class="material-icons" data-action="next">skip_next</i>
             </div>
         </div>
-        <div class="btn">           
+        <div class="btn">
+            <!-- <i class="material-icons">shuffle</i> -->
         </div>
         <div class="music"></div>
     </div>
@@ -61,29 +64,29 @@
 
     <script>
         const sources = [{
-                src: './assets/music1.mp3',
-                cover: './assets/01.jpg',
-                title: 'music1',
-                singer: 'singer1'
-            },
-            {
-                src: './assets/music2.mp3',
-                cover: './assets/02.jpg',
-                title: 'music2',
-                singer: 'singer2'
-            },
-            {
-                src: './assets/music3.mp3',
-                cover: './assets/03.jpg',
-                title: 'music3',
-                singer: 'singer3'
-            },
-            {
-                src: './assets/music4.mp3',
-                cover: './assets/04.jpg',
-                title: 'music4',
-                singer: 'singer4'
-            },
+            src: './assets/music1.mp3',
+            cover: './assets/01.jpg',
+            title: 'music1',
+            singer: 'singer1'
+        },
+        {
+            src: './assets/music2.mp3',
+            cover: './assets/02.jpg',
+            title: 'music2',
+            singer: 'singer2'
+        },
+        {
+            src: './assets/music3.mp3',
+            cover: './assets/03.jpg',
+            title: 'music3',
+            singer: 'singer3'
+        },
+        {
+            src: './assets/music4.mp3',
+            cover: './assets/04.jpg',
+            title: 'music4',
+            singer: 'singer4'
+        },
         ]
         new Player(document.querySelector('.player'), sources)
     </script>
